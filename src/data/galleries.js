@@ -5,7 +5,7 @@ const galleries = [
     date: 'October 2024',
     location: 'Brooklyn, NY',
     password: 'love',
-  coverImage: process.env.PUBLIC_URL + '/images/_90A0225.JPG',
+  coverImage: '/images/_90A0225.JPG',
     images: [
       { src: 'https://images.unsplash.com/photo-1519741497674-611481863552', alt: 'Bride and groom kissing under a floral archway' },
       { src: 'https://images.unsplash.com/photo-1511285560921-4c92727bAD92', alt: 'Bride holding her bouquet' },
@@ -23,7 +23,7 @@ const galleries = [
     date: 'September 2024',
     location: 'Napa Valley, CA',
     password: 'wine',
-  coverImage: process.env.PUBLIC_URL + '/images/_90A0225.JPG',
+  coverImage: '/images/_90A0225.JPG',
     images: [
       { src: 'https://images.unsplash.com/photo-1509610782354-321790381858', alt: 'Couple in a vineyard' },
       { src: 'https://images.unsplash.com/photo-1567684139246-c1a30403a436', alt: 'Bride and groom toasting with wine' },
@@ -39,7 +39,7 @@ const galleries = [
     date: 'August 2024',
     location: 'Santorini, Greece',
     password: 'sun',
-  coverImage: process.env.PUBLIC_URL + '/images/_90A0225.JPG',
+  coverImage: '/images/_90A0225.JPG',
     images: [
       { src: 'https://images.unsplash.com/photo-1529933363985-8d9936a4a3a2', alt: 'Couple overlooking the Santorini caldera' },
       { src: 'https://images.unsplash.com/photo-1560895514-8691354a411d', alt: 'Bride in a flowing dress against a blue dome' },
