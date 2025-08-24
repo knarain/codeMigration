@@ -1,0 +1,7 @@
+CREATE TABLE photos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    folder_id INT,
+    filename VARCHAR(255) NOT NULL,
+    uploaded_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (folder_id) REFERENCES folders(id) ON DELETE CASCADE
+);

@@ -17,10 +17,10 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
-    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'About', href: '/about' },
+    { name: 'Portfolio', href: '/portfolio' },
     { name: 'Clients', href: '/clients' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Contact', href: '/contact' },
   ];
   
   const scrollToSection = (id) => {
@@ -48,7 +48,7 @@ const Header = () => {
         <nav className="max-w-screen-xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <NavLink to="/" className="font-serif text-2xl font-semibold tracking-wider text-gray-900">
-              ROH GANTS
+              Rashmi Photography
             </NavLink>
 
             {/* Desktop Navigation */}

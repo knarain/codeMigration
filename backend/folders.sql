@@ -1,0 +1,7 @@
+CREATE TABLE folders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    album_id INT,
+    name VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (album_id) REFERENCES albums(id) ON DELETE CASCADE
+);

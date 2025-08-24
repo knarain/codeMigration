@@ -22,7 +22,7 @@ const Footer = () => {
           className="flex flex-col items-center"
         >
           <div className="font-serif text-2xl font-semibold tracking-wider text-gray-900 mb-4">
-            ROH GANTS
+            Rashmi Photography
           </div>
 
           <div className="flex space-x-6 mb-6">

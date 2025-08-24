@@ -1,0 +1,7 @@
+CREATE TABLE clients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255),
+    phone VARCHAR(50),
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
