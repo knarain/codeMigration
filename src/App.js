@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import ClientGalleriesPage from "./pages/ClientGalleriesPage"; // ✅ fixed import
-
+ 
 function App() {
   const location = useLocation();
 
