@@ -57,7 +57,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
           className="mt-4 text-lg md:text-xl font-light tracking-widest uppercase text-gray-200"
         >
-          New York & Worldwide
+          Hyderabad & Bengaluru
         </motion.p>
       </div>
 
