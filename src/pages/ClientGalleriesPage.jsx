@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { getGalleries } from '../data/galleries';
+import axios from 'axios';
 import { Helmet } from 'react-helmet';
 
 const pageVariants = {
@@ -17,16 +17,38 @@ const itemVariants = {
 
 const ClientGalleriesPage = () => {
   const [galleries, setGalleries] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    setGalleries(getGalleries());
+    const fetchGalleries = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+
+        // 🔹 Update with your backend API URL
+        const response = await axios.get("https://rashmiphotography.com/backend/upload.php");
+
+        setGalleries(response.data); // assuming backend returns array of galleries
+        console.log(response.data);
+      } catch (err) {
+        setError("Failed to load galleries. Please try again later.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchGalleries();
   }, []);
 
   return (
     <>
       <Helmet>
-        <title>Client Galleries - Roh Gants Photography</title>
-        <meta name="description" content="Access your private wedding and portrait photography galleries." />
+        <title>Client Galleries - Rashmi Photography</title>
+        <meta
+          name="description"
+          content="Access your private wedding and portrait photography galleries."
+        />
       </Helmet>
       <motion.div
         initial="initial"
@@ -39,7 +61,7 @@ const ClientGalleriesPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-center mb-16"
           >
             <h1 className="font-serif text-4xl md:text-5xl font-light text-gray-900 mb-4">
@@ -50,29 +72,34 @@ const ClientGalleriesPage = () => {
             </p>
           </motion.div>
 
+          {loading && <p className="text-center text-gray-500">Loading galleries...</p>}
+          {error && <p className="text-center text-red-500">{error}</p>}
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {galleries.map((gallery) => (
-              <motion.div key={gallery.id} variants={itemVariants}>
-                <Link to={`/clients/${gallery.id}`} className="block group">
-                  <div className="relative overflow-hidden aspect-[4/3]">
-                    <img
-                      src={gallery.coverImage}
-                      alt={`Cover for ${gallery.title}'s gallery`}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
-                  </div>
-                  <div className="pt-5 text-center">
-                    <h2 className="font-serif text-2xl font-semibold text-gray-800 group-hover:text-gray-900 transition-colors">
-                      {gallery.title}
-                    </h2>
-                    <p className="text-sm text-gray-500">
-                      {gallery.date} &middot; {gallery.location}
-                    </p>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
+            {!loading &&
+              !error &&
+              galleries.map((gallery) => (
+                <motion.div key={gallery.id} variants={itemVariants}>
+                  <Link to={`/clients/${gallery.id}`} className="block group">
+                    <div className="relative overflow-hidden aspect-[4/3]">
+                      <img
+                        src={`https://rashmiphotography.com/${gallery.thumbnail}?ts=${Date.now()}`}// Ensure your backend provides a thumbnail URL
+                        alt={`Cover for ${gallery.title}'s gallery`}
+                        className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+                    </div>
+                    <div className="pt-5 text-center">
+                      <h2 className="font-serif text-2xl font-semibold text-gray-800 group-hover:text-gray-900 transition-colors">
+                        {gallery.title}
+                      </h2>
+                      <p className="text-sm text-gray-500">
+                        {gallery.date} &middot; {gallery.location}
+                      </p>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
           </div>
         </div>
       </motion.div>

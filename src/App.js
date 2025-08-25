@@ -18,14 +18,14 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Roh Gants Photography - Storytelling Through The Lens</title>
+        <title>Rashmi Photography - Capturing Happiness...</title>
         <meta
           name="description"
           content="Elegant and timeless wedding, portrait, and editorial photography. Based in New York, available worldwide."
         />
         <meta
           property="og:title"
-          content="Roh Gants Photography - Storytelling Through The Lens"
+          content="Rashmi Photography - Capturing Happiness..."
         />
         <meta
           property="og:description"
