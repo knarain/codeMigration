@@ -28,7 +28,7 @@ const About = () => {
               Rashmi Photography
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              I'm a New York-based wedding and portrait photographer with a passion for capturing authentic, emotional, and timeless stories. My approach is documentary in nature, focusing on real moments as they unfold.
+              I'm a Hyderabad-based wedding and portrait photographer with a passion for capturing authentic, emotional, and timeless stories. My approach is documentary in nature, focusing on real moments as they unfold.
             </p>
             <p className="text-gray-600 leading-relaxed">
               With a background in fine art, I bring a unique perspective to every wedding, blending photojournalism with an editorial eye to create images that are both beautiful and meaningful.
