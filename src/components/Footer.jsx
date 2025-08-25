@@ -39,10 +39,10 @@ const Footer = () => {
           </div>
 
           <p className="text-center text-sm text-gray-500">
-            © {currentYear} Roh Gants Photography. All Rights Reserved.
+            © {currentYear} Rashmi Photography. All Rights Reserved.
           </p>
           <p className="text-center text-sm text-gray-500 mt-1">
-            New York Wedding Photographer | Available Worldwide
+            Hyderabad-Bengaluru | Available Worldwide
           </p>
         </motion.div>
       </div>
