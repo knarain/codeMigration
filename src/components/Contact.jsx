@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { useToast } from '@/components/ui/use-toast';
+import { Button } from './ui/button';
+import { useToast } from './ui/use-toast';
 
 const Contact = () => {
   const { toast } = useToast();

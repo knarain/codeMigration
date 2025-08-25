@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { toast } from '@/components/ui/use-toast';
+import { Button } from './ui/button';
+import { toast } from './ui/use-toast';
 
 const portfolioItems = [
   { image: 'Romantic elopement photo of a couple on a city rooftop at dusk', alt: 'Couple on a city rooftop at dusk', tall: true },

@@ -5,6 +5,9 @@ import { AnimatePresence } from "framer-motion";
 import { Toaster } from "./components/ui/toaster";
 import SingleGalleryPage from "./pages/SingleGalleryPage";
 import Header from "./components/Header";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import ClientGalleriesPage from "./pages/ClientGalleriesPage"; // ✅ fixed import
@@ -35,6 +38,9 @@ function App() {
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/clients" element={<ClientGalleriesPage />} />
             <Route path="/clients/:galleryId" element={<SingleGalleryPage />} />
           </Routes>

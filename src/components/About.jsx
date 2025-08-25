@@ -15,7 +15,7 @@ const About = () => {
           >
             <img 
               className="object-cover w-full h-full"
-              alt="Portrait of Roh Gants, a professional photographer, looking thoughtfully at the camera in a natural light setting"
+              alt="Portrait of Rashmi Photography, a professional photographer, looking thoughtfully at the camera in a natural light setting"
              src="https://images.unsplash.com/photo-1505761809615-0e2a532be598" />
           </motion.div>
           <motion.div
@@ -25,7 +25,7 @@ const About = () => {
             viewport={{ once: true, amount: 0.5 }}
           >
             <h2 className="font-serif text-4xl md:text-5xl font-light text-gray-900 mb-6">
-              Roh Gants
+              Rashmi Photography
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
               I'm a New York-based wedding and portrait photographer with a passion for capturing authentic, emotional, and timeless stories. My approach is documentary in nature, focusing on real moments as they unfold.
