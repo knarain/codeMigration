@@ -13,7 +13,7 @@ const HomePage = () => (
       <p className="text-gray-600 max-w-2xl mx-auto mb-8">
         Capturing elegant and timeless moments for weddings, portraits, and editorials. Based in Hyderabad and Bengaluru, available worldwide.
       </p>
-      <img src="/public/logo512.png" alt="Rashmi Photography Logo" className="mx-auto mb-8 w-32 h-32" />
+      <img src="logo/logo.png" alt="Rashmi Photography Logo" className="mx-auto mb-8 " width='300'/>
     </div>
   </>
 );
