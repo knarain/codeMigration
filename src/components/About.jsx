@@ -28,11 +28,14 @@ const About = () => {
               Rashmi Photography
             </h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              I'm a Hyderabad-based wedding and portrait photographer with a passion for capturing authentic, emotional, and timeless stories. My approach is documentary in nature, focusing on real moments as they unfold.
+              Founded in 2014, Rashmi Photography was born out of pure passion and a shared love for storytelling through images. What started as a creative pursuit has now grown into a dedicated team of professionals with backgrounds in software engineering and an unshakable commitment to the art of photography.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              With a background in fine art, I bring a unique perspective to every wedding, blending photojournalism with an editorial eye to create images that are both beautiful and meaningful.
+              Based in Hyderabad, with a strong presence in Bengaluru and across India, our mission is to create images that not only capture moments but also preserve memories that last a lifetime.
             </p>
+            <p className="text-gray-600 leading-relaxed">
+              At Rashmi Photography, we don’t just take pictures—we tell stories of love, family, and celebration. Whether it’s a grand wedding, a candid portrait, or a heartfelt moment, our goal is to make every frame meaningful.
+              </p>
           </motion.div>
         </div>
       </div>
