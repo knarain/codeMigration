@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Camera, Heart, Users } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { toast } from '@/components/ui/use-toast';
+import { Button } from '../components/ui/button.jsx';
+import { toast } from '../components/ui/use-toast';
 
 
 const Services = () => {

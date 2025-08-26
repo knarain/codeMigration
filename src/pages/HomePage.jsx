@@ -1,21 +1,45 @@
-
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import Hero from '../components/Hero.jsx';
+import About from '../components/About.jsx';
+import Portfolio from '../components/Portfolio.jsx';
+import Services from '../components/Services.jsx';
+import Contact from '../components/Contact.jsx';
+import { motion } from 'framer-motion';
 
-const HomePage = () => (
-  <>
-    <Helmet>
-      <title>Rashmi Photography -  Capturing Happiness..</title>
-      <meta name="description" content="Elegant and timeless wedding, portrait, and editorial photography. Based in New York, available worldwide." />
-    </Helmet>
-    <div className="section-padding pt-32 min-h-screen text-center">
-      <h1 className="font-serif text-5xl font-light text-gray-900 mb-6">Welcome to Rashmi Photography</h1>
-      <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-        Capturing elegant and timeless moments for weddings, portraits, and editorials. Based in Hyderabad and Bengaluru, available worldwide.
-      </p>
-      <img src="https://rashmiphotography.com/logo/LOGO SIGN BLACK PNG 1.png" alt="Rashmi Photography Logo" className="mx-auto mb-8 " width='300'/>
-    </div>
-  </>
-);
+const pageVariants = {
+  initial: {
+    opacity: 0,
+  },
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
+
+const pageTransition = {
+  type: 'tween',
+  ease: 'anticipate',
+  duration: 0.5,
+};
+
+const HomePage = () => {
+  return (
+    <motion.div
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Hero />
+      <About />
+      <Portfolio />
+      <Services />
+      <Contact />
+    </motion.div>
+  );
+};
 
 export default HomePage;

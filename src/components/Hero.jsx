@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '../components/ui/button';
 
 const images = [
   { src: "https://images.unsplash.com/photo-1519741497674-611481863552", alt: "Bride and groom kissing under a floral archway at their wedding" },
