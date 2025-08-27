@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,7 +8,8 @@ const Footer = () => {
   const socialLinks = [
     { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Youtube, href: '#', label: 'YouTube' },
   ];
 
   return (
@@ -42,7 +43,7 @@ const Footer = () => {
             © {currentYear} Rashmi Photography. All Rights Reserved.
           </p>
           <p className="text-center text-sm text-gray-500 mt-1">
-            Hyderabad-Bengaluru | Available Worldwide
+            Hyderabad-Bengaluru | Available Across India.
           </p>
         </motion.div>
       </div>
