@@ -1,0 +1,92 @@
+{
+  "galleries": [
+    {
+      "id": 1,
+      "title": "Akhil & Pooja Wedding",
+      "date": "2025-02-15",
+      "location": "Hyderabad, India",
+      "thumbnail": "https://rashmiphotography.com/images/Akhil weds Pooja/thumbnail.webp",
+      "password": "1234",
+      "images": [
+        {
+          "src": "uploads/gallery1/photo1.jpg",
+          "alt": "Bride and groom exchanging vows"
+        },
+        {
+          "src": "uploads/gallery1/photo2.jpg",
+          "alt": "Family group photo"
+        },
+        {
+          "src": "uploads/gallery1/photo3.jpg",
+          "alt": "Couple dancing at reception"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Rahul & Priya Engagement",
+      "date": "2025-03-05",
+      "location": "Mumbai, India",
+      "thumbnail": "uploads/gallery2/thumbnail.jpg",
+      "password": "5678",
+      "images": [
+        {
+          "src": "uploads/gallery2/photo1.jpg",
+          "alt": "Ring exchange ceremony"
+        },
+        {
+          "src": "uploads/gallery2/photo2.jpg",
+          "alt": "Couple with family"
+        },
+        {
+          "src": "uploads/gallery2/photo3.jpg",
+          "alt": "Engagement decorations"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Corporate Team Shoot",
+      "date": "2025-04-20",
+      "location": "Bangalore, India",
+      "thumbnail": "uploads/gallery3/thumbnail.jpg",
+      "password": "team2025",
+      "images": [
+        {
+          "src": "uploads/gallery3/photo1.jpg",
+          "alt": "Team group photo"
+        },
+        {
+          "src": "uploads/gallery3/photo2.jpg",
+          "alt": "Employees at work"
+        },
+        {
+          "src": "uploads/gallery3/photo3.jpg",
+          "alt": "Office interior"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Arjun's Birthday Party",
+      "date": "2025-05-12",
+      "location": "Chennai, India",
+      "thumbnail": "uploads/gallery4/thumbnail.jpg",
+      "password": "birthday12",
+      "images": [
+        {
+          "src": "uploads/gallery4/photo1.jpg",
+          "alt": "Birthday cake"
+        },
+        {
+          "src": "uploads/gallery4/photo2.jpg",
+          "alt": "Kids playing games"
+        },
+        {
+          "src": "uploads/gallery4/photo3.jpg",
+          "alt": "Family celebrating"
+        }
+      ]
+    }
+  ]
+}
